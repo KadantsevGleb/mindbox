@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./RobotoRegular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  src: url("./RobotoBold.woff2") format("woff2");
+}
+
+@theme {
+	--default-font-family: 'Roboto';
+}
+
+@layer base {
+	body {
+		@apply bg-[#333] overflow-x-hidden;
+	}
+}
+
+@layer components {
+  .todo-checkbox {
+    @apply appearance-none size-5 border-[2px] border-[#fff] rounded-[50%] checked:bg-[url('./img/check.png')] checked:bg-contain checked:bg-no-repeat checked:bg-center
+  }
+
+  .active {
+    @apply border
+  }
+
+  .todo-filter {
+    @apply px-3 py-1
+  }
+}
