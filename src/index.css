@@ -4,14 +4,14 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  src: url("./RobotoRegular.woff2") format("woff2");
+  src: url("../RobotoRegular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
-  src: url("./RobotoBold.woff2") format("woff2");
+  src: url("../RobotoBold.woff2") format("woff2");
 }
 
 @theme {
